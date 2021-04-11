@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build && npm run clean",
     "lint": "vue-cli-service lint",
+    "clean": "rm -rf ../public/dist",
     "start": "cross-env NODE_ENV=production PORT=80 node server",
     "dev": "nodemon server",
     "test": "jest"
